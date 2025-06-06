@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* Hero Section */
+.hero-section {
+    padding: 6rem 0;
+    background-image: 
+        linear-gradient(rgba(220, 238, 255, 0.92), rgba(255, 255, 255, 0.95)),
+        url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1c2luZXNzJTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+h1 span {
+    color: #0284c7;
+}
+
+p {
+    font-size: 1.125rem;
+    color: #1d4ed8;
+    margin-bottom: 2.5rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1.125rem;
+    padding: 0.875rem 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+.arrow-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+    transform: translateX(0.25rem);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 8rem 0;
+    }
+    
+    h1 {
+        font-size: 3.75rem;
+    }
+    
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+.diff {
+    padding: 12px;
+    padding-top: 100px;
+    background-color: #dae8f5;
+    border-radius: 25px;
+}
+h1 {
+    text-align: center;
+    color: #0046c0;
+    font-size: 4em;
+    margin-bottom: 40px;
+    
+
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 30px 25px;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #e5f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  .icon-circle img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .card-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #0046c0;
+  }
+
+  .card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .card ul {
+    margin: 0 0 20px 20px;
+    padding: 0;
+    list-style-type: disc;
+    color: #444;
+    font-size: 0.95em;
+  }
+
+  .learn-more {
+    color: #0056d2;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .learn-more:hover {
+    text-decoration: underline;
+  }
+
+
+  .contact-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    
+  }
+  h1{
+    font-size: 3.74em;
+    font-weight: bold;
+    padding-top: 12px;
+  }
+  
+  .contact-section h1 {
+    color: #114cd6;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-info h2, .contact-form h2 {
+    color: #114cd6;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .contact-info p {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact-info p span {
+    margin-right: 8px;
+  }
+  
+  .contact-info img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  .contact-form textarea {
+    min-height: 100px;
+  }
+  
+  .contact-form button {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #114cd6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #010101;
+  }
+
+  .footer {
+    background-color: #90a8f0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .footer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #000000;
+  }
+  
+  .footer-icons {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  .footer-icons span {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .footer .credit {
+    font-size: 13px;
+    color: #000000;
+  }
+  
+  @media (max-width: 600px) {
+    .footer h2 {
+      font-size: 20px;
+    }
+    .footer-icons {
+      font-size: 20px;
+    }
+    .footer p {
+      font-size: 13px;
+    }
+  }
+  
